@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Design Your Mane</title>
+    <style>
+        :root { --accent: #e60023; --dark: #111; --light-bg: #f8f9fa; }
+        body { font-family: 'Inter', sans-serif; margin: 0; background: var(--light-bg); color: #333; line-height: 1.6; }
+
+        /* ── NAVBAR (Index ile Aynı) ── */
+        nav {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 28px;
+            height: 64px;
+        }
+        .logo {
+            font-weight: 900;
+            font-size: 1.1rem;
+            letter-spacing: 0.12em;
+            text-decoration: none;
+            color: var(--dark);
+            text-transform: uppercase;
+        }
+        .logo span { color: var(--accent); }
+        .nav-links { display: flex; align-items: center; gap: 4px; }
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            font-size: 0.85rem;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+        .nav-links a:hover { background: #f0f0f0; color: var(--dark); }
+        .nav-links a.active { color: var(--accent); background: rgba(230,0,35,0.06); }
+
+        /* ── ABOUT CONTENT ── */
+        .about-hero { background: white; padding: 80px 20px; text-align: center; border-bottom: 1px solid #eee; }
+        .about-hero h1 { font-size: 3rem; margin: 0; color: var(--dark); }
+        
+        .content-section { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+        .content-section h2 { color: var(--dark); border-left: 4px solid var(--accent); padding-left: 15px; margin-bottom: 20px; }
+        .content-section p { font-size: 1.1rem; color: #555; margin-bottom: 30px; }
+
+        .cta-box { background: var(--dark); color: white; padding: 40px; border-radius: 20px; text-align: center; margin-top: 50px; }
+        .cta-box a { color: var(--accent); text-decoration: none; font-weight: bold; font-size: 1.2rem; }
+
+        footer { background: var(--dark); color: white; padding: 60px 20px; text-align: center; margin-top: 100px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo">Design Your <span>Mane</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">Hair Trends</a>
+            <a href="#">Tutorials</a>
+            <a href="about.html" class="active">About</a>
+            <a href="https://pinterest.com/KENDI_LINKIN" class="nav-cta" style="background: var(--dark); color: white; padding: 8px 18px; border-radius: 8px; text-decoration: none;">Get Inspired</a>
+        </div>
+    </div>
+</nav>
+
+<div class="about-hero">
+    <h1>Our Story</h1>
+    <p style="color: #888; text-transform: uppercase; letter-spacing: 2px; margin-top: 10px;">Modern Elegance for Professional Women</p>
+</div>
+
+<div class="content-section">
+    <h2>The Vision Behind Design Your Mane</h2>
+    <p>
+        Design Your Mane was founded with a single mission: to empower professional women through effortless and elegant hair styling. We believe that your hair is your most powerful accessory, especially in a corporate world where confidence is key.
+    </p>
+
+    <h2>Why We Focus on Office Styles?</h2>
+    <p>
+        We know that your mornings are busy. Between meetings and presentations, you need styles that look polished but don't take hours to create. Our curated guides and tutorials focus on "under 5-minute" looks that maintain their professional charm from 9 to 5.
+    </p>
+
+    <div class="cta-box">
+        <h3>Join Our Journey</h3>
+        <p>Stay updated with the latest 2026 hair trends and daily inspirations.</p>
+        <a href="https://pinterest.com/KENDI_LINKIN">Follow us on Pinterest →</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Design Your Mane. Dedicated to Modern Elegance.</p>
+</footer>
+
+</body>
+</html>
